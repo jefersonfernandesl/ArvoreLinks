@@ -1,10 +1,90 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/fonts/roboto/Roboto-Regular.ttf'); 
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/assets/fonts/montserrat/Montserrat-Regular.ttf'); 
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    background-color: #091120;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;   
+}
+
+/* MAIN */
+.main {
+    
+    background-color: #e9f2f9;
+    width: 30rem;
+    height: 30rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+/* SECTION */
+.main__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+
+/* MAIN HEADER */
 .main__header__profilePicture {
-    height: 10rem;
+    height: 8rem;
     border-radius: 50%;
+}
+
+.main__header__nameText {
+    font-family: 'Montserrat';
+}
+
+.main__header__apresentationText {
+    font-family: 'Roboto';
+}
+
+/* MAIN LINKS */
+
+.main__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    text-decoration: none;
+}
+
+.main__links__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 3rem;
+    background-color: #1b325f;
+    border-radius: 1rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.main__links__link:hover {
+    background-color: #9cc4e4;
+    color: #091120;
+}
+
+.main__links__link__icons {
+    height: 1rem;
 }
